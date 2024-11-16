@@ -1,11 +1,8 @@
 package com.wiseman;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 public class Alien {
 
-    @Autowired
    private Computer computer;
 
     public Computer getComputer() {
@@ -17,7 +14,10 @@ public class Alien {
     }
 
 
-    public Alien() {
+    public Alien(
+            Computer computer
+    ) {
+        this.computer = computer;
         System.out.println("Creating Alien specie ----.");
     }
 
