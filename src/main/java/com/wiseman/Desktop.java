@@ -4,7 +4,7 @@ public class Desktop implements Computer {
     private int ram;
 
     public Desktop(){
-        System.out.println("Creating new Laptop ----.");
+        System.out.println("Creating new Desktop ----.");
     }
 
 
