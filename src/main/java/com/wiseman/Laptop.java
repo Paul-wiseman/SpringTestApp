@@ -7,8 +7,8 @@ public class Laptop implements Computer {
         System.out.println("Creating new Laptop ----.");
     }
 
-    public int getRam() {
-        return ram;
+    public int setRam(int ram) {
+        return this.ram = ram;
     }
 
     @Override

@@ -11,21 +11,15 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class AppConfig {
 
-    @Bean
+    @Bean(name = "martianManhunter")
     @Scope(value = "prototype")
-    public Desktop desktop (){
-        return new Desktop();
-    }
-
-    @Bean(name = "arkadian")
-    @Scope(value = "prototype")
-    public Alien alien(){
+    public Alien alien() {
         return new Alien();
     }
 
     @Bean
     @Scope(value = "prototype")
-    public Computer computer(){
+    public Computer computer() {
         return new Laptop();
     }
 }
