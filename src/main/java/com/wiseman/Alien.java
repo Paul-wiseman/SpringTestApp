@@ -1,8 +1,11 @@
 package com.wiseman;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Alien {
 
+    @Autowired
    private Computer computer;
 
     public Computer getComputer() {
