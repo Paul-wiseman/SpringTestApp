@@ -1,10 +1,11 @@
 package com.wiseman;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class Alien {
-
     private Computer computer;
 
     public Computer getComputer() {
@@ -15,13 +16,13 @@ public class Alien {
         this.computer = computer;
     }
 
-
-//    public Alien(
-//            Computer computer
-//    ) {
-//        this.computer = computer;
-//        System.out.println("Creating Alien specie ----.");
-//    }
+    @Autowired
+    public Alien(
+           @Qualifier("desktop") Computer computer
+    ) {
+        this.computer = computer;
+        System.out.println("Creating Alien specie ----.");
+    }
 
     public int getAge() {
         return age;
