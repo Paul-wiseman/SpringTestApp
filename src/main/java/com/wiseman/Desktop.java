@@ -1,5 +1,8 @@
 package com.wiseman;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Desktop implements Computer {
     private int ram;
 

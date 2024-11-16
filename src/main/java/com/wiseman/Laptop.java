@@ -1,5 +1,8 @@
 package com.wiseman;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Laptop implements Computer {
     private int ram = 5;
 

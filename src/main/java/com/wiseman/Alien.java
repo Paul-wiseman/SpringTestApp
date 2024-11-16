@@ -1,9 +1,11 @@
 package com.wiseman;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class Alien {
 
-   private Computer computer;
+    private Computer computer;
 
     public Computer getComputer() {
         return computer;
@@ -14,12 +16,12 @@ public class Alien {
     }
 
 
-    public Alien(
-            Computer computer
-    ) {
-        this.computer = computer;
-        System.out.println("Creating Alien specie ----.");
-    }
+//    public Alien(
+//            Computer computer
+//    ) {
+//        this.computer = computer;
+//        System.out.println("Creating Alien specie ----.");
+//    }
 
     public int getAge() {
         return age;
